@@ -82,7 +82,7 @@ const handleRemove = async (selectedRows: API.UserInfo[]) => {
   }
 };
 
-const TableList: React.FC<unknown> = () => {
+const List: React.FC<unknown> = () => {
   const [createModalVisible, handleModalVisible] = useState<boolean>(false);
   const [updateModalVisible, handleUpdateModalVisible] =
     useState<boolean>(false);
@@ -267,4 +267,4 @@ const TableList: React.FC<unknown> = () => {
   );
 };
 
-export default TableList;
+export default List;

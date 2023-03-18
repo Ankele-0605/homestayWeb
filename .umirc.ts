@@ -5,12 +5,9 @@ export default defineConfig({
   // @，项目 src 目录
   // @@，临时目录，通常是 src/.umi 目录
   // umi，当前所运行的 umi 仓库目录
-  alias: {
-  },
+  alias: {},
   antd: {},
-  access: {},
   model: {},
-  initialState: {},
   request: {},
   // 开启文件hash后缀
   hash: true,
@@ -42,22 +39,42 @@ export default defineConfig({
   routes: [
     {
       path: '/',
-      redirect: '/home',
+      redirect: '/index',
     },
     {
       name: '首页',
-      path: '/home',
-      component: './Home',
+      path: '/index',
+      component: './Index',
     },
     {
-      name: '权限演示',
-      path: '/access',
-      component: './Access',
+      name: '登录',
+      path: '/login',
+      component: 'Login',
     },
     {
-      name: ' CRUD 示例',
-      path: '/table',
-      component: './Table',
+      name: '注册',
+      path: '/register',
+      component: 'Register',
+    },
+    {
+      name: '旅客指南',
+      path: '/guide',
+      component: 'Guide',
+    },
+    {
+      name: '关于无锡',
+      path: '/about',
+      component: 'About',
+    },
+    {
+      name: '民宿列表',
+      path: '/list',
+      component: 'List',
+    },
+    {
+      name: '民宿详情',
+      path: '/detail',
+      component: 'Detail',
     },
   ],
   npmClient: 'pnpm',
